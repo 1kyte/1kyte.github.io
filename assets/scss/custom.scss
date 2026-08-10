@@ -1,0 +1,74 @@
+:root {
+  --body-background: #f2efe8;
+  --accent-color: #d85f42;
+  --accent-color-darker: #b9472e;
+  --accent-color-text: #fffaf5;
+  --body-text-color: #5f5d59;
+  --card-border-radius: 16px;
+  --card-background: #fffdf9;
+  --card-text-color-main: #20201f;
+  --card-text-color-secondary: #66635f;
+  --card-text-color-tertiary: #817d77;
+  --card-separator-color: rgba(70, 64, 58, 0.12);
+  --article-font-family: "Iowan Old Style", "Noto Serif SC", "Songti SC", Georgia, serif;
+  --base-font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --section-separation: 32px;
+}
+
+:root[data-scheme="dark"] {
+  --body-background: #191918;
+  --accent-color: #ef795c;
+  --accent-color-darker: #ff9277;
+  --accent-color-text: #1b1715;
+  --body-text-color: rgba(255, 250, 244, 0.68);
+  --card-background: #242321;
+  --card-background-selected: #312f2c;
+  --card-text-color-main: #f6f0e8;
+  --card-text-color-secondary: rgba(246, 240, 232, 0.72);
+  --card-text-color-tertiary: rgba(246, 240, 232, 0.5);
+  --card-separator-color: rgba(255, 255, 255, 0.09);
+}
+
+.site-name a {
+  font-weight: 800;
+  letter-spacing: -0.045em;
+}
+
+.site-description {
+  max-width: 19rem;
+  line-height: 1.6;
+}
+
+.article-list article,
+.widget,
+.main-article {
+  border: 1px solid var(--card-separator-color);
+}
+
+.article-title {
+  letter-spacing: -0.025em;
+}
+
+.article-content {
+  font-feature-settings: "kern", "liga";
+}
+
+.article-content h2,
+.article-content h3 {
+  font-family: var(--base-font-family);
+  letter-spacing: -0.025em;
+}
+
+.archives-date a {
+  color: var(--accent-color);
+}
+
+.tagCloud .tagCloud-tags a {
+  border: 1px solid var(--card-separator-color);
+}
+
+@media (min-width: 1024px) {
+  .container.extended {
+    max-width: 1500px;
+  }
+}
