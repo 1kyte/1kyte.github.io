@@ -1,6 +1,138 @@
-baseURL = 'https://1kyte.github.io/blog'
-languageCode = "zh-CN"
-title = "The Cold Tone"
+baseURL = "https://1kyte.github.io/"
+locale = "zh-CN"
+defaultContentLanguage = "zh-cn"
+title = "Kallen Wang"
 theme = "PaperMod"
+enableRobotsTXT = true
+enableEmoji = true
 
+[pagination]
+  pagerSize = 8
 
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[params]
+  env = "production"
+  author = "Kallen Wang"
+  description = "Engineering notes on backend systems, cloud-native delivery, enterprise integration, and applied AI."
+  keywords = ["Backend Engineering", "Cloud Native", "System Design", "Enterprise Integration", "Applied AI"]
+  images = ["og.png"]
+  mainSections = ["posts"]
+  defaultTheme = "auto"
+  disableThemeToggle = false
+  ShowReadingTime = true
+  ShowBreadCrumbs = true
+  ShowPostNavLinks = true
+  ShowCodeCopyButtons = true
+  ShowToc = true
+  TocOpen = false
+  ShowShareButtons = false
+  ShowRssButtonInSectionTermList = true
+  displayFullLangName = true
+  DateFormat = "2006-01-02"
+
+  [params.assets]
+    disableHLJS = true
+
+  [params.cover]
+    hidden = true
+    hiddenInList = true
+    hiddenInSingle = true
+
+  [params.hero]
+    eyebrow = "SOFTWARE ENGINEER · BACKEND · CLOUD NATIVE"
+    title = "Building reliable systems for real-world problems."
+    intro = "I write about backend engineering, cloud-native delivery, enterprise integration, and practical AI systems — with an emphasis on architecture, trade-offs, and lessons from implementation."
+
+    [params.hero.primaryButton]
+      label = "Explore projects"
+      url = "/projects/"
+
+    [params.hero.secondaryButton]
+      label = "About me"
+      url = "/about/"
+
+  [[params.focusAreas]]
+    number = "01"
+    title = "Backend Systems"
+    description = "APIs, data, distributed systems, and reliability."
+
+  [[params.focusAreas]]
+    number = "02"
+    title = "Cloud Native"
+    description = "Kubernetes, infrastructure as code, and delivery automation."
+
+  [[params.focusAreas]]
+    number = "03"
+    title = "Enterprise Solutions"
+    description = "Integration patterns, identity, and resilient workflows."
+
+  [[params.focusAreas]]
+    number = "04"
+    title = "Applied AI"
+    description = "RAG, agent workflows, and production-minded AI applications."
+
+  [[params.featuredProjects]]
+    title = "Infrastructure Delivery Pipeline"
+    description = "A case study in repeatable infrastructure provisioning and automated delivery."
+    meta = "IaC · CI/CD · Delivery"
+    url = "/projects/#infrastructure-delivery-pipeline"
+
+  [[params.featuredProjects]]
+    title = "LinkedIn Analysis"
+    description = "A university capstone combining data collection, processing, analysis, and a web experience."
+    meta = "Python · JavaScript · Data"
+    url = "https://github.com/1kyte/Linkedin-Analysis"
+    external = true
+
+  [[params.featuredProjects]]
+    title = "Personal Technical Blog"
+    description = "A Hugo-based engineering portfolio with automated publishing through GitHub Pages."
+    meta = "Hugo · GitHub Actions"
+    url = "/projects/#personal-technical-blog"
+
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/1kyte"
+
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name = "Writing"
+    url = "/posts/"
+    weight = 10
+
+  [[menu.main]]
+    identifier = "projects"
+    name = "Projects"
+    url = "/projects/"
+    weight = 20
+
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 30
+
+  [[menu.main]]
+    identifier = "archives"
+    name = "Archive"
+    url = "/archives/"
+    weight = 40
+
+  [[menu.main]]
+    identifier = "search"
+    name = "Search"
+    url = "/search/"
+    weight = 50
+
+[markup]
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = true
+    noClasses = false
