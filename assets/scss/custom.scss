@@ -165,5 +165,6 @@
 @media (min-width: 1024px) {
   .container.extended {
     max-width: 1500px;
+    --right-sidebar-max-width: clamp(240px, 18vw, 280px);
   }
 }
