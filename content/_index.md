@@ -1,5 +1,5 @@
 ---
 title: "Kallen Wang"
-description: "Engineering notes on backend systems, cloud-native delivery, enterprise integration, and applied AI."
+description: "关于后端系统、云原生交付、企业集成与 AI 应用的工程笔记。"
 image: "/og-stack.png"
 ---

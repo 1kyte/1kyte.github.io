@@ -1,9 +1,9 @@
 ---
-title: "Search"
+title: "搜索"
 type: "page"
 layout: "search"
 url: "/search/"
-summary: "Search articles by title and content."
+summary: "按标题与正文搜索文章。"
 image: "/og-stack.png"
 outputs: ["html", "json"]
 ---

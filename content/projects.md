@@ -1,6 +1,6 @@
 ---
-title: "Projects"
-description: "Selected engineering work and the lessons behind it."
+title: "项目"
+description: "精选工程项目及其背后的实践经验。"
 date: 2026-08-10
 showToc: true
 image: "/og-stack.png"
