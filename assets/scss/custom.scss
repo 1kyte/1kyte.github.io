@@ -40,7 +40,6 @@
 }
 
 .article-list article,
-.widget,
 .main-article {
   border: 1px solid var(--card-separator-color);
 }
@@ -63,8 +62,104 @@
   color: var(--accent-color);
 }
 
-.tagCloud .tagCloud-tags a {
-  border: 1px solid var(--card-separator-color);
+/* Keep the right sidebar visually consistent with the flat left navigation. */
+.right-sidebar {
+  gap: 28px;
+}
+
+.right-sidebar .widget:not(.search-form) {
+  display: grid;
+  grid-template-columns: 20px minmax(0, 1fr);
+  column-gap: 16px;
+  row-gap: 12px;
+  border: 0;
+}
+
+.right-sidebar .widget-icon {
+  display: flex;
+  align-items: center;
+  grid-column: 1;
+}
+
+.right-sidebar .widget-icon svg {
+  width: 20px;
+  height: 20px;
+  stroke-width: 1.33;
+}
+
+.right-sidebar .widget .section-title {
+  grid-column: 2;
+  align-self: center;
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-transform: none;
+}
+
+.right-sidebar .widget > :not(.widget-icon):not(.section-title) {
+  grid-column: 1 / -1;
+}
+
+.right-sidebar .search-form input {
+  padding: 30px 42px 12px 0;
+  border: 0;
+  border-bottom: 1px solid var(--card-separator-color);
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.right-sidebar .search-form label {
+  inset-inline-start: 0;
+  top: 2px;
+}
+
+.right-sidebar .search-form input:focus {
+  border-color: var(--accent-color);
+  box-shadow: none;
+}
+
+.right-sidebar .search-form button {
+  width: 40px;
+  padding: 0;
+}
+
+.right-sidebar .widget.archives .widget-archive--list {
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.right-sidebar .widget.archives .archives-year a {
+  padding: 10px 0 10px 36px;
+  color: var(--body-text-color);
+  transition: color 0.2s ease;
+}
+
+.right-sidebar .widget.archives .archives-year a:hover,
+.right-sidebar .widget.archives .archives-year a:hover .year {
+  color: var(--accent-color);
+}
+
+.right-sidebar .tagCloud .tagCloud-tags {
+  gap: 8px 18px;
+  padding-inline-start: 36px;
+}
+
+.right-sidebar .tagCloud .tagCloud-tags a {
+  padding: 4px 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  color: var(--body-text-color);
+  transition: color 0.2s ease;
+}
+
+.right-sidebar .tagCloud .tagCloud-tags a:hover {
+  color: var(--accent-color);
+  box-shadow: none;
 }
 
 @media (min-width: 1024px) {
