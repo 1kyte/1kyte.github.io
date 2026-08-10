@@ -3,11 +3,13 @@ title: "开源不只是一份免费代码"
 date: 2021-12-14T16:41:33+08:00
 lastmod: 2026-08-10T00:00:00+08:00
 draft: false
+slug: "open-source-and-maintainers"
 description: "从 Log4j 事件出发，重新理解开源项目背后的维护成本、社区责任与理想主义。"
 summary: "从 Log4j 事件出发，重新理解开源项目背后的维护成本、社区责任与理想主义。"
 categories: ["Engineering Culture"]
 tags: ["Open Source", "Log4j", "Maintainers"]
 aliases: ["/posts/what-is-opensource/"]
+image: "/og-stack.png"
 ---
 
 2021 年底，Log4j 的严重漏洞让这个 Java 日志库突然进入大众视野。由于大量产品依赖它，企业不得不紧急排查并修复风险。事件本身是一次安全危机，也让更多人看见了一个经常被忽略的事实：现代软件世界建立在大量开源项目之上，而这些项目背后往往只有很少的维护者。

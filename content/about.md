@@ -3,6 +3,7 @@ title: "About"
 description: "Software engineer focused on reliable systems and practical delivery."
 date: 2026-08-10
 showToc: false
+image: "/og-stack.png"
 ---
 
 Hi, I'm Kallen — a software engineer interested in the point where engineering depth meets real-world delivery.
