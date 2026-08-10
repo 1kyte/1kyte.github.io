@@ -1,6 +1,6 @@
 ---
-title: "About"
-description: "Software engineer focused on reliable systems and practical delivery."
+title: "关于"
+description: "关注可靠系统与工程实践的软件工程师。"
 date: 2026-08-10
 showToc: false
 image: "/og-stack.png"
